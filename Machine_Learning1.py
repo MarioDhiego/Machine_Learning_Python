@@ -1,5 +1,5 @@
 ############################################################################################
-# MODELOS DE MACHINE LEARNING: Introdulcaao in PYTHON
+# MODELOS DE MACHINE LEARNING: Introducao em PYTHON
 #####################################################
 # Aluno: Mario Diego Rocha Valente
 # Habilidades: Estatistico, Especialista em Bioestatistica + Controle de Qualidade
@@ -60,7 +60,7 @@ from sklearn.ensemble import ExtraTreesClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 
-# Floresa Aleatatoria
+# Floresta Aleatatoria
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import RandomizedSearchCV
 from scipy.stats import uniform, truncnorm, randint
@@ -200,12 +200,12 @@ resultado2 = modelo2.score(x_teste, y_teste)
 print("Acuracia", + str(accuracy_score(y_teste, y_pred2))
 
 
-# from sklearn.metrics import f1_score
+from sklearn.metrics import f1_score
 # Quanto + próimo de 1 melhor
 print("F1 Score : {}".format(f1_score(y_teste, y_pred2)))
 
 
-# from sklearn.metrics import confusion_matrix
+from sklearn.metrics import confusion_matrix
 print ("Matriz de Confusão : \n" + str(confusion_matrix(y_teste, y_pred2)))
 
 tn, fp, fn, tp = confusion_matrix(y_teste, y_pred2).ravel()
